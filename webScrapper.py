@@ -6,8 +6,8 @@ import time
 import os   
 
 #BeautifulSoup stuff
-DRIVER_PATH_CHROME = "D:\\TRASHTHINGS\\chromedriver_win32\\chromedriver"
-DRIVER_PATH_EDGE = "D:\\TRASHTHINGS\\edgedriver_win64\\msedgedriver"
+DRIVER_PATH_CHROME = "..\\chromedriver_win32\\chromedriver"
+DRIVER_PATH_EDGE = "..\\edgedriver_win64\\msedgedriver"
 options = Options()
 #options.headless = True
 options.add_argument("--window-size=1920,1200")
@@ -24,7 +24,7 @@ ratingInput = float(input("Enter rating (0-10): "))
 BASE_URL = "https://myanimelist.net/"
 PROFILE_URL = "https://myanimelist.net/animelist/" + nicknameInput + "?status=7"
 LOGIN_URL = "https://myanimelist.net/login.php?from=%2Ftopanime.php%3F_location%3Dmal_h_m"
-mydir = 'C:\\Users\\sstef\\source\\repos\\PP\\WebScrapping'
+mydir = '..\\WebScrapping'
 myfile = 'Anime.txt'
 fixedPath = os.path.join(mydir, myfile)
 genresBio = []
